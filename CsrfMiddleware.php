@@ -5,6 +5,7 @@ namespace Cruxoid\Middleware;
 class CsrfMiddleware extends \Slim\Middleware
 {
     protected $key = 'csrf_token';
+	
 
     public function call(){
         $this->app->hook('slim.before', [$this, 'check']);
