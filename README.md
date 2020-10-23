@@ -41,5 +41,20 @@ You are all set, now head back to your twig template and add the following insid
 </form>
 
 ```
+Validating CSRF Token
+====================================
+
+Validate post form data that contains CSRF Token aginst session data i.e.
+
+```
+ $csrf_token = $_POST['csrf_token'];
+ $session_csrf_token = $_SESSION['csrf_token'];
+
+if($csrf_token == $session_csrf_token){
+//successfully token match, proceed with the form submission
+} else {
+//CSRF Voilated, error!!
+}
+```
 
 You are all set!
