@@ -1,19 +1,15 @@
 {
     "name": "cruxoid/slim2-csrf",
-    "type": "library",
-    "description": "Slim2 Security Component - CSRF Library",
-    "keywords": [],
-    "homepage": "https://cruxoid.com",
-    "license": "GPL",
+    "description": "Slim2 Security Library for CSRF",
     "authors": [
         {
-            "name": "Cruxoid Inc."
+            "name": "Cruxoid Inc.",
+            "email": "support@cruxoid.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7.0"
-    },
-	"minimum-stability": "dev",
-	"prefer-stable": true    
-   
+    }
 }
+
